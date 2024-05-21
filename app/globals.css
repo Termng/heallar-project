@@ -1,4 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Custom styles */
+@layer base {
+  /* Example of adding custom base styles */
+  body {
+    font-family: 'Sora', sans-serif;
+  }
+}
+
+.wide-leading {
+  line-height: 2.5rem; /* Adjust the value as needed */
+}
