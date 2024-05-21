@@ -1,18 +1,19 @@
 import { nextui } from "@nextui-org/react";
 import typography from "@tailwindcss/typography";
 const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette");
+import { PluginCreator } from "tailwindcss/types/config";
 
 // Function to add Tailwind colors as CSS variables
-function addVariablesForColors({ addBase, theme }) {
-  let allColors = flattenColorPalette(theme("colors"));
-  let newVars = Object.fromEntries(
-    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+const addVariablesForColors: PluginCreator = ({ addBase, theme }) => {
+  const allColors = flattenColorPalette(theme("colors"));
+  const newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, String(val)])
   );
 
   addBase({
     ":root": newVars,
   });
-}
+};
 
 const config = {
   content: [
