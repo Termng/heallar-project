@@ -11,13 +11,18 @@
   "dependencies": {
     "@nextui-org/navbar": "^2.0.30",
     "@nextui-org/react": "^2.3.6",
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/vision": "^3.43.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.4",
     "next": "14.2.3",
+    "next-sanity": "^9.2.0",
     "next-themes": "^0.3.0",
     "react": "^18",
     "react-dom": "^18",
+    "sanity": "^3.43.0",
     "simplex-noise": "^4.0.1",
+    "styled-components": "^6.1.11",
     "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {

@@ -1,5 +1,5 @@
 import * as React from "react";
-import Home from "./page";
+import Home from "./(client)/page";
 
 // 1. import `NextUIProvider` component
 import {NextUIProvider} from "@nextui-org/react";
